@@ -107,14 +107,17 @@ body{
 
 .donate {
     background-color: #181818;
+    padding: 60px 0px;
+
+}
+
+.donate__container{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: flex-start;
-
-    padding: 60px 0px;
-
 }
+
 .donate__text {
     display: flex;
     flex-direction:column;
@@ -155,4 +158,122 @@ body{
 
 .donate__image {
     margin-right: 15px;
+}
+
+
+.emergency {
+    padding: 80px 0px 120px 0px;
+    background-color: #fff;
+}
+
+.emergency__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.emergency__container>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.emergency__text {
+    max-width: 600px;
+}
+.emergency__title {
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h3.emergency__title{
+    font-size: 48px;
+}
+
+.emergency__list {
+    padding: 0;
+    list-style-type: none;
+}
+.emergency__list-item {
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.emergency__list-item::before{
+    content: "";
+    background-color: #ED2D2D;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.emergency__list-item span{
+    font-weight: 500;
+}
+
+.emergency__image {
+    margin: 0 auto;
+}
+
+
+.noway {
+    background-color: #ED2D2D;
+    color: #fff;
+    padding: 120px 0px 80px 0px;
+}
+.noway__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.noway__image {
+    margin-left: 120px;
+    margin-top: 40px;
+    /* position: absolute; */
+
+    /* left: 10px; */
+}
+.noway__text {
+}
+.noway__title {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.noway__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.noway__list-item {
+    padding: 0;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.noway__list-item::before{
+    content: url(../img/cross-icon.svg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
