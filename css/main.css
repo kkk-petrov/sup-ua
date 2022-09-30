@@ -8,6 +8,8 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    background-color: #181818;
+
 }
 
 .header {
@@ -15,6 +17,8 @@ body{
     height: 50px;
     font-size: 16px;
     font-weight: 400;
+    position: sticky;
+    top: 0;
 }
 .header__container {
     display: flex;
@@ -57,4 +61,46 @@ body{
 
 .header__nav-link.active{
     color: #ED2D2D;
+}
+
+.main {
+
+}
+.hero {
+    background: url(../img/hero.jpg) center center/cover no-repeat;
+    height: 900px;
+    width: 100%;
+}
+.hero__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.hero__title {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 160px;
+    font-weight: 700;
+
+}
+.hero__tags {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-top: -80px;
+    list-style-type: none;
+}
+.hero__tag {
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+
+    padding: 0px 120px;
+}
+.main__container {
 }
