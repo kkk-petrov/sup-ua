@@ -1,6 +1,3 @@
-const newsletter = document.querySelector('.newsletter');
-const input = document.querySelector('#input');
-
 const header = document.querySelector('.header');
 const defaultOffset = 200;
 let lastScroll = 0;
@@ -20,12 +17,4 @@ window.addEventListener('scroll', () => {
   }
 
   lastScroll = scrollPosition();
-});
-
-newsletter.addEventListener('click', (event) => {
-  if (event.target === input) {
-    document.querySelector('.newsletter__input').classList.add('active');
-  } else if (event.target !== input && input.value === '') {
-    document.querySelector('.newsletter__input').classList.remove('active');
-  }
 });
