@@ -7,7 +7,12 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Help Ukraine Right Now!</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -54,19 +59,19 @@
 
         <section class="donate">
             <div class="donate__container container">
-                <div class="donate__text">
+                <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="donate__text">
                     <h2 class="donate__text-title title">Send humanitarian or military help</h2>
                     <p class="donate__text-text">Do not send humanitarian air to unidentified warehouses. We are providing information just to verified locations.</p>
                     <a href="#" class="donate__text-button">DONATE NOW</a>
                 </div>
-                <img src="./img/main/haid.png" alt="Humanitarian aid" class="donate__image">
+                <img data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" src="./img/main/haid.png" alt="Humanitarian aid" class="donate__image">
             </div>
         </section>
 
         <section class="emergency">
             <div class="emergency__container container">
                 <div>
-                    <div class="emergency__text">
+                    <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="emergency__text">
                         <h2 class="emergency__title title">In case of emergency or war</h2>
                         <ul class="emergency__list">
                             <li class="emergency__list-item">Keep records of blood type (your own and close relatives) and information about possible health problems (for example, drug allergies, chronic diseases);</li>
@@ -75,12 +80,12 @@
                             <li class="emergency__list-item">In case of receiving information from <span>official state channels authorities</span> about a possible danger, pass it on to other people: relatives, neighbors, colleagues.</li>
                         </ul>
                     </div>
-                    <img src="./img/main/war1.png" alt="" class="emergency__image">
+                    <img data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" src="./img/main/war1.png" alt="" class="emergency__image">
                 </div>
 
                 <div>
-                    <img src="./img/main/war2.png" alt="" class="emergency__image">
-                    <div class="emergency__text">
+                    <img data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" src="./img/main/war2.png" alt="" class="emergency__image">
+                    <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="emergency__text">
                         <h3 class="emergency__title title">Some questions should be considered in advance:</h3>
                         <ul class="emergency__list">
                             <li class="emergency__list-item">Find out where the storage facilities and shelters closest to you are located home, work and places you visit often;</li>
@@ -96,38 +101,38 @@
 
         <section class="noway">
             <div class="noway__container">
-                <img src="./img/main/emergency.png" alt="" class="noway__image">
+                <img data-aos="fade-up" data-aos-duration="300" src="./img/main/emergency.png" alt="" class="noway__image">
                 <div class="noway__text">
                     <h2 class="noway__title title">NO WAY NOT WORTH IT:</h2>
                     <ul class="noway__list">
-                        <li class="noway__list-item">Approach the windows if you hear shots;</li>
-                        <li class="noway__list-item">Observe the course of hostilities, stand or run under fire;</li>
-                        <li class="noway__list-item">Arguing with armed men, taking pictures and making notes in their presence;</li>
-                        <li class="noway__list-item">Display weapons or objects similar to them;</li>
-                        <li class="noway__list-item">Pick up abandoned weapons and ammunition;</li>
-                        <li class="noway__list-item">Wear army uniform or camouflage clothing;</li>
-                        <li class="noway__list-item">Touch explosive and suspicious objects, try disassemble them or move them to another place.</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Approach the windows if you hear shots;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Observe the course of hostilities, stand or run under fire;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Arguing with armed men, taking pictures and making notes in their presence;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Display weapons or objects similar to them;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Pick up abandoned weapons and ammunition;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Wear army uniform or camouflage clothing;</li>
+                        <li class="noway__list-item" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">Touch explosive and suspicious objects, try disassemble them or move them to another place.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section class="blog">
-            <div class="blog__container container">
-                <div class="blog__text">
+            <div class="blog__container container swiper">
+                <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="blog__text">
                     <h2 class="blog__text-title title">Blog</h2>
                     <a href="./blog.html" class="blog__text-link">View all</a>
                 </div>
-                <ul class="blog__posts">
-                    <li class="blog__post">
+                <ul class="blog__posts swiper-wrapper">
+                    <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                         <img heigth="161px" src="./img/blog/mines.png" alt="mines" class="blog__post-image">
                         <div class="blog__post-text">
-                            <h4 class="blog__post-title title">A Guide to Handling the Threat of Mining</h4>
+                            <h4 class="blog__post-title title">A guide to handling the threat of mining</h4>
                             <a href="./blog/mines.html" class="blog__post-link">Read more</a>
                         </div>
                     </li>
 
-                    <li class="blog__post">
+                    <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
                         <img heigth="162px" src="./img/blog/occup.png" alt="occup" class="blog__post-image">
                         <div class="blog__post-text">
                             <h4 class="blog__post-title title">Acting in occupied territory</h4>
@@ -135,7 +140,7 @@
                         </div>
                     </li>
 
-                    <li class="blog__post">
+                    <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
                         <img heigth="161px" src="./img/blog/fam.png" alt="fam" class="blog__post-image">
                         <div class="blog__post-text">
                             <h4 class="blog__post-title title">Preparation of civil defense in the siege</h4>
@@ -144,64 +149,103 @@
 
                     </li>
 
-                    <li class="blog__post">
+                    <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">
                         <img heigth="161px" src="./img/blog/chemical.png" alt="chemical" class="blog__post-image">
                         <div class="blog__post-text">
                             <h4 class="blog__post-title title">What to do during a chemical weapon attack</h4>
                             <a href="./blog/mines.html" class="blog__post-link">Read more</a>
                         </div>
                     </li>
+
+
+
+                    <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                            <img heigth="161px" src="./img/blog/mines.png" alt="mines" class="blog__post-image">
+                            <div class="blog__post-text">
+                                <h4 class="blog__post-title title">A Guide to Handling the Threat of Mining</h4>
+                                <a href="./blog/mines.html" class="blog__post-link">Read more</a>
+                            </div>
+                        </li>
+    
+                        <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                            <img heigth="162px" src="./img/blog/occup.png" alt="occup" class="blog__post-image">
+                            <div class="blog__post-text">
+                                <h4 class="blog__post-title title">Acting in occupied territory</h4>
+                                <a href="./blog/mines.html" class="blog__post-link">Read more</a>
+                            </div>
+                        </li>
+    
+                        <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                            <img heigth="161px" src="./img/blog/fam.png" alt="fam" class="blog__post-image">
+                            <div class="blog__post-text">
+                                <h4 class="blog__post-title title">Preparation of civil defense in the siege</h4>
+                                <a href="./blog/mines.html" class="blog__post-link">Read more</a>
+                            </div>
+    
+                        </li>
+    
+                        <li class="blog__post swiper-slide" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                            <img heigth="161px" src="./img/blog/chemical.png" alt="chemical" class="blog__post-image">
+                            <div class="blog__post-text">
+                                <h4 class="blog__post-title title">What to do during a chemical weapon attack</h4>
+                                <a href="./blog/mines.html" class="blog__post-link">Read more</a>
+                            </div>
+                        </li>
                 </ul>
+                <!-- <div class="swiper-controls">
+                    <button class="swiper-controls-prev"></button>
+                    <button class="swiper-controls-next"></button>
+                </div> -->
             </div>
         </section>
 
         <section class="disinformation">
-            <div class="disinformation__container container">
+            <div  class="disinformation__container container">
                 <h2 class="disinformation__title title">How not to become victim disinformation</h2>
                 <ul class="disinformation__list">
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>1</div>The goal of the spreaders of disinformation is to sow panic, to weaken our will to defend ourselves. Maintain self-control and do not spread information of an emotional nature in social networks.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>2</div>Ukraine defends itself and continues the struggle for its territory. If you hear the opposite, it is not true. They want to demoralize you.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>3</div>Do not believe or spread information from dubious sources. Reliable information — on official pages and channels state bodies and Public Broadcasting.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>4</div>Don't spread information about the move in any way Ukrainian troops. You can hurt those who defend you and the state.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>5</div>Ukraine is waging a defensive war on its territory. The report about the alleged shelling of the civilian population by the Ukrainian military is not true.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>6</div>Information about losses can only be known by security authorities and defense of Ukraine. Information on private accounts can not true. Do not rush to share such information.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>7</div>The aggressor will spread slander and "treason" through his official or controlled channels. And others can use it
                         means - to hide behind patriotic slogans and Ukrainian
                         symbols Check out the patriotic-looking but questionable ones
                         messages and calls.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>8</div>The aggressor will spread various rumors not only about the fighters, but
                         and about the military-political leadership, so that Ukrainians don't
                         they trusted him too. Check every alarming news with the official ones
                         sources
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>9</div>The enemy's goal is to split Ukrainian society from within and destroy our faith in our own strength. We are really different and ours views may not coincide, but we have a common cause - repel the occupier. So keep unity and support each other.
                     </li>
 
-                    <li class="disinformation__list-item">
+                    <li data-aos="fade-up" data-aos-duration="300" data-aos-delay="100" class="disinformation__list-item">
                         <div>10</div>If the Internet connection or government pages are interrupted organs were broken, contact Public Broadcasting for information. If the television is not working, turn it on subscriber radio point.
                     </li>
                     
@@ -210,7 +254,7 @@
         </section>
 
         <section class="newsletter">
-            <div class="newsletter__container container">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" class="newsletter__container container">
                 <h2 class="newsletter__title title">Be informed <span>— subscribe</span> newsletter</h2>
                 <div>
                     <p class="newsletter__text">You must know the truth. We need your support. We are providing to verified information just. Glory to Ukraine!</p>
@@ -251,7 +295,8 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/input.js"></script>
 </body>
