@@ -558,6 +558,7 @@ h3.emergency__title{
     font-weight: 300;
     font-size: 20px;
     max-width: 459px;
+    margin: 0;
 }
 
 #input{
@@ -603,6 +604,7 @@ h3.emergency__title{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 
@@ -776,4 +778,307 @@ h3.emergency__title{
     display: block;
     left: 0;
     top: 0;
+}
+
+
+
+@media (max-width: 1024px) {
+    .hero,.donate,.emergency,.noway,.blog,.disinformation,.newsletter{
+        padding: 60px 0px;
+    }
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .header{
+        max-width: 1024px;
+    }
+    .hero{
+        max-height: 100vh;
+    }
+    .hero__tags{
+        margin-top: -30px;
+    }
+    .hero__tag{
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+    .emergency__container>div{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .emergency__container>div:last-child{
+        flex-direction: column-reverse;
+
+    }
+    .emergency__text{
+        max-width: 100%;
+    }
+    .emergency__image {
+        display: none;
+        /* margin: 0; */
+    }
+    .noway__container{
+        flex-direction: column;
+    }
+    .noway__text{
+        margin: 0 auto;
+
+    }
+    .noway__image{
+        /* margin-left: -220px; */
+        position: relative;
+    }
+    .disinformation__list{
+        max-height: 390px;
+    }
+    .title{
+        font-size: 48px;
+    }
+    .hero__title{
+        font-size: 100px;
+    }
+    .disinformation__list-item{
+        font-size: 12px;
+    }
+    .disinformation__list-item div{
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+    }
+    .blog__post{
+        padding: 15px 15px;
+        width: 45%;
+        max-width: 50%;
+    }
+    .blog__post-text{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .blog__post-title{
+        font-size: 18px;
+    }
+    .newsletter__title{
+        max-width: 300px;
+        margin: auto 0;
+    }
+    .newsletter__container>div{
+        max-height: 165px;
+    }
+    .newsletter__text{
+
+    }
+    .newsletter__input::after{
+        top: 50%;
+        right: -5px;
+        transform: scale(.7) translateY(-50%);
+    }
+    #input{
+        border-bottom: 2px solid #000;
+    }
+
+    .footer__title{
+        font-size: 64px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 700px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .hero__title{
+        font-size: 80px;
+    }
+    .donate__container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .donate__text{
+        max-width: 40%;
+        height: 250px;
+    }
+    .donate__text-text{
+        font-size: 14px;
+    }
+    .donate__image{
+        margin: 0;
+        max-width: 50%;
+    }
+    .donate__text-button{
+        padding: 5px 10px;
+    }
+    .noway__image {
+        display: none;
+    }
+    .noway__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .noway__list{
+        align-items: center;
+        justify-content: center;
+    }
+    .blog__posts{
+    }
+    .blog__post{
+        
+    }
+    .blog__post-title{
+        font-size: 16px;
+
+    }
+
+    .disinformation__list{
+        max-height: 70vh;
+    }
+    .disinformation__list-item{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .newsletter__container>div{
+        align-items: flex-end;
+        max-height: 120px;
+    }
+    .newsletter__title{
+        max-width: 200px;
+        margin: 0;
+    }
+    .newsletter__text{
+        max-width: 400px;
+        text-align: right;
+    }
+    #input{
+        width: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero,.donate,.emergency,.noway,.blog,.disinformation,.newsletter{
+        padding: 40px 0px;
+    }
+    .hero__tag{
+        padding: 0px 10px;
+        font-size: 14px;
+    }
+    .container{
+        max-width: 96%;
+    }
+    .noway__title, .emergency__title, .disinformation__title{
+        margin: 10px;
+    }
+    .title,
+    h3.emergency__title{
+        font-size: 24px;
+    }
+    .hero__title{
+        font-size: 60px;
+    }
+    .donate__container{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .donate__image{
+        /* width: 200px; */
+        height: 142px;
+        /* margin: auto 0; */
+    }
+    .donate__text{
+        max-width: 200px;
+        height: 142px;
+        justify-content: space-between;
+    }
+    .donate__text-title{
+    
+        margin-bottom: 10px;
+    }
+    .donate__text-text{
+        display: none;
+    }
+    .donate__text-button{
+        font-size: 16px;
+        padding: 5px;
+        width: 130px;
+        text-align: center;
+    }
+    .emergency__image{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .emergency__container>div{
+        flex-direction: column-reverse;
+    }
+    .emergency__container>div:last-child{
+        flex-direction: column;
+    }
+    .emergency__list-item{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .noway__text{
+        align-items: flex-start;
+        max-width: 96%;
+        margin: 0 auto;
+    }
+    .noway__list{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .noway__list-item{
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .noway__list-item::before{
+        top: -7px;
+        left: -7px;
+        transform: scale(.5);
+    }
+    .blog__post{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .disinformation{
+        height: 100%;
+        padding-bottom: 300px;
+    }
+    .disinformation__list{
+        flex-direction: column;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+    .disinformation__list-item{
+        width: 100%;
+        max-width: 100%;
+    }
+    .disinformation__list-item>div{
+        margin-right: 5px;
+    }
+    .newsletter__text{
+        font-size: 12px;
+    }
+    .footer{
+        padding: 40px 0px;
+    }
+    .footer__title{
+        font-size: 36px;
+        text-align: center;
+    }
 }
