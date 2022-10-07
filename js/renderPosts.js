@@ -53,4 +53,9 @@ const renderPost = () => {
     `;
 };
 
-renderPost();
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelector('.loading-spinner').classList.add('loaded');
+    renderPost();
+  }, 2000);
+});

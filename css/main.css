@@ -105,7 +105,8 @@ ul{
     padding: 0;
     margin: auto;
     color: #fff;
-    font-size: 190px;
+    text-transform: uppercase;
+    font-size: 160px;
     font-weight: 700;
 
 }
@@ -320,8 +321,14 @@ h3.emergency__title{
 .blog__text-link {
     margin: 0;
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
 }
+
+.blog__text-link:hover{
+    text-decoration: underline;
+
+}
+
 .blog__posts {
     padding: 0;
     margin: 0;
@@ -329,7 +336,7 @@ h3.emergency__title{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     position: relative;
@@ -409,6 +416,7 @@ h3.emergency__title{
     height: 312px;
     border-radius: 10px;
     background-color: #fff;
+    margin-bottom: 15px;
 }
 
 .blog__post.big{
@@ -466,6 +474,7 @@ h3.emergency__title{
     color: #000;
     text-decoration: underline;
 }
+
 
 .disinformation {
     background-color: #fff;
@@ -598,13 +607,23 @@ h3.emergency__title{
     transition: all .2s ease-in;
 }
 
-.newsletter__input::after{
-    content: url(../img/arrow-icon.svg);
+.newsletter__input-button{
+
+    background: url(../img/arrow-icon.svg) center center/cover no-repeat;
+    width: 40px;
+    height: 25px;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    transition: all .3s ease;
+    border: none;
+}
+
+.newsletter__input-button.send{
+    right: -50px;
+    opacity:0;
 }
 
 
@@ -700,6 +719,36 @@ h3.emergency__title{
 }
 
 
+/* 404 */
+
+
+.error {
+    background-color: #000;
+    padding: 80px 0px;
+}
+.error__wrapper {
+}
+.error__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container {
+}
+.error__image {
+}
+.error__text {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.error__btn {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
 /* POST.HTML */
 
 
@@ -709,6 +758,11 @@ h3.emergency__title{
 }
 .post__container {
 }
+
+.post__wrapper{
+    transition: all .3s ease;
+}
+
 .post__info {
     display: flex;
     flex-direction: row;
@@ -779,6 +833,62 @@ h3.emergency__title{
     left: 0;
     top: 0;
 }
+
+
+
+@keyframes rotate-forever {
+0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+.loading-spinner {
+-webkit-animation-duration: 0.75s;
+-moz-animation-duration: 0.75s;
+animation-duration: 0.75s;
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-name: rotate-forever;
+-moz-animation-name: rotate-forever;
+animation-name: rotate-forever;
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+animation-timing-function: linear;
+height: 30px;
+width: 30px;
+border: 8px solid #9c9c9c;
+border-right-color: transparent;
+border-radius: 50%;
+display: block;
+}
+  
+.spinner{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+position: relative;
+}
+
+.loaded{
+display: none;
+}
+
+  /* MEDIA QUERIES */
 
 
 
@@ -873,7 +983,7 @@ h3.emergency__title{
     .newsletter__text{
 
     }
-    .newsletter__input::after{
+    .newsletter__input-button{
         top: 50%;
         right: -5px;
         transform: scale(.7) translateY(-50%);
@@ -967,6 +1077,7 @@ h3.emergency__title{
 
 @media (max-width: 576px) {
     .hero,.donate,.emergency,.noway,.blog,.disinformation,.newsletter{
+        min-height: 100vh;
         padding: 40px 0px;
     }
     .hero__tag{
